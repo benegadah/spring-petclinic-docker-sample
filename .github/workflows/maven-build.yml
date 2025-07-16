@@ -26,4 +26,4 @@ jobs:
           distribution: 'adopt'
           cache: maven
       - name: Build with Maven Wrapper
-        run: chmod +x ./mvnw -B verify
+        run: --chmod=+x ./mvnw -B verify
