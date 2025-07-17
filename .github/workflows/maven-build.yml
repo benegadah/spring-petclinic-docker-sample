@@ -9,8 +9,6 @@ on:
   pull_request:
     branches: [ main ]
 
-permissions: write-all
-
 jobs:
   build:
 
@@ -27,5 +25,7 @@ jobs:
           java-version: ${{matrix.java}}
           distribution: 'adopt'
           cache: maven
+      - name: Change File Mode of Maven Wrapper
+        run: chmod +x mvnw
       - name: Build with Maven Wrapper
         run: ./mvnw -B verify
