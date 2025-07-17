@@ -3,9 +3,8 @@
 
 name: Java CI with Maven
 
-permissions:
-  contents: write
-  issues: read
+env:
+  GITHUB_TOKEN: ${{ secrets.PETCLINIC_DOCKER_SAMPLE}}
 
 on:
   push:
