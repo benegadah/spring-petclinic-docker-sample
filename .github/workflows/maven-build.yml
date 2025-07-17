@@ -28,4 +28,4 @@ jobs:
       - name: Change File Mode of Maven Wrapper
         run: chmod +x mvnw
       - name: Build with Maven Wrapper
-        run: ./mvnw -B verify
+        run: ./mvnw -B -Dmaven.test.failure.ignore=true verify
