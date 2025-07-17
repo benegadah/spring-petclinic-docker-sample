@@ -3,6 +3,9 @@
 
 name: Java CI with Gradle
 
+env:
+  GITHUB_TOKEN: ${{ secrets.PETCLINIC_DOCKER_SAMPLE}}
+
 on:
   push:
     branches: [ main ]
