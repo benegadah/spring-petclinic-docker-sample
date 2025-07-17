@@ -3,6 +3,10 @@
 
 name: Java CI with Maven
 
+permissions:
+  contents: write
+  issues: read
+
 on:
   push:
     branches: [ main ]
